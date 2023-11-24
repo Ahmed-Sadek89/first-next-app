@@ -1,0 +1,21 @@
+.btn{
+    position: relative;
+    padding: 2px;
+    border: 1.5px solid #53c28b70;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    cursor: pointer;
+}
+.icon{
+    font-size: 14px;
+}
+.ball{
+    background-color: #53c28b;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}

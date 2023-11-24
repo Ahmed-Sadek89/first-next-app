@@ -1,0 +1,109 @@
+.singleBlog {
+    display: flex;
+    flex-direction: column;
+}
+
+.singleBlog_layout_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.singleBlog_layout_content_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.singleBlog_layout_content_info_h3 {
+    font-weight: bold;
+}
+
+
+.singleBlog_layout_content_info_user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.singleBlog_layout_content_info_user_img {
+    border-radius: 50%;
+}
+
+.singleBlog_layout_content_image {
+    position: relative;
+    width: 100%;
+}
+
+.singleBlog_fullDesc_p {
+    font-size: 20px;
+}
+
+@media(min-width: 0px) {
+    .singleBlog {
+        gap: 60px;
+    }
+    .singleBlog_layout_content {
+        flex-direction: column-reverse;
+    }
+    .singleBlog_layout_content_info,
+    .singleBlog_layout_content_image {
+        flex: auto;
+    }
+    .singleBlog_layout_content_image {
+        height: 300px;
+    }
+    .singleBlog_layout_content_image_img {
+        object-fit: cover;
+    }
+    .singleBlog_layout_content_info{
+        gap: 20px;
+    }
+    .singleBlog_layout_content_info_h3 {
+        font-size: 20px;
+    }
+    .singleBlog_layout_content_info_p {
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .singleBlog_fullDesc_p {
+        font-weight: 100;
+    }
+}
+
+@media(min-width: 800px) {
+    .singleBlog {
+        gap: 30px;
+    }
+    .singleBlog_layout_content:nth-child(2n+1) {
+        flex-direction: row;
+    }
+    .singleBlog_layout_content:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+    .singleBlog_layout_content_info,
+    .singleBlog_layout_content_image {
+        flex: 1;
+    }
+    .singleBlog_layout_content_image {
+        height: 400px;
+    }
+    .singleBlog_layout_content_image_img {
+        object-fit: contain;
+    }
+    .singleBlog_layout_content_info{
+        gap: 0px;
+    }
+    .singleBlog_layout_content_info_h3 {
+        font-size: 40px;
+    }
+    .singleBlog_layout_content_info_p {
+        font-size: 19px;
+        font-weight: 300;
+    }
+    .singleBlog_fullDesc_p {
+        font-weight: normal;
+    }
+}

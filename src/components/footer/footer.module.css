@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer_copywrite {
+    font-size: 11px;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_links_icon {
+    cursor: pointer;
+}
+
+
+@media (min-width: 0px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 20px 0px;
+    }
+}
+
+@media (min-width: 800px) {
+    .footer {
+        flex-direction: row;
+        height: 100px;
+        padding: 0px;
+        gap: 0px;
+    }
+}
