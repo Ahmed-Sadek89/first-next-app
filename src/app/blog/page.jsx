@@ -7,9 +7,9 @@ export const metadata = {
 }
 
 async function getData() {
-  console.log(process.env.SERVER)
+  const apiUrl = process.env.NEXT_PUBLIC_SERVER || 'http://localhost:3000';
   const res = await fetch(
-    `${process.env.SERVER}/posts`
+    `${apiUrl}/api/posts`
   );
   return await res.json();
 }
